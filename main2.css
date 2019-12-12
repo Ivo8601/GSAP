@@ -1,0 +1,218 @@
+/* Font insert */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300&display=swap')
+
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, p, span, ul, li { margin:0;padding:0; user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */ }
+html {
+  height: 100%;
+}
+
+/* css variables */
+:root {
+  --main-color: #deb992;
+}
+
+
+body {
+  background-image: radial-gradient(#003544 0%, #00173b 100%);
+  background-repeat: repeat;
+  color: white;
+  font: 16px "Trebuchet MS";
+  margin: 0;
+}
+
+/* Canvas styling */
+
+.canvas {
+  margin: auto;
+  position: relative;
+  max-width: 250px;
+  height: auto;
+  width: 100%;
+  border-radius: 10%;
+  box-shadow: inset 3px 3px 20px white;
+}
+
+/* border styling */
+.border {
+  max-width: 90%;
+  height: 1px;
+  background-color: var(--main-color);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Top Nav */
+nav {
+  background: #133557 opacity(0.8);
+  width: 100%;
+}
+.main__nav {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+}
+.item {
+  list-style-type: none;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  padding: 20px;
+  color: #1BA098;
+  transition: all 0.5s ease-in-out;
+}
+.item:hover {
+  color: rgb(22, 122, 116);
+}
+.svg {
+  width: 30%;
+  height: auto;
+}
+.logo {
+  list-style-type: none;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  padding: 20px;
+  color: #1BA098;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+/* Main heading + subheading */
+.head {
+  max-width: 1100px;
+  width: 100%;
+  margin: 3rem auto;
+  text-align: center;
+}
+.main__head {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10vw;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: var(--main-color);
+  z-index: 1;
+}
+.sub__head {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+/* Circles */
+
+.circle__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.circle {
+  position: fixed;
+  border: solid 1px var(--main-color);
+  opacity: 0;
+  z-index: -1;
+}
+.circ__1 {
+  top: 340px;
+  width: 440px;
+  height: 440px;
+  border-radius: 98%;
+}
+.circ__2 {
+    top: 350px;
+    margin-left: -180px;
+    width: 627px;
+    height: 627px;
+    border-radius: 98%;
+    -webkit-transform-origin: 40% 50% 0;
+    transform-origin: 40% 50% 0;
+}
+.circ__3 {
+  top: 400px;
+  margin-left: 280px;
+  width: 400px;
+  height: 400px;
+  border-radius: 98%;
+  -webkit-transform-origin: 60% 20% 0;
+  transform-origin: 60% 20% 0;
+}
+.circ__4 {
+  top: 635px;
+  margin-left: 280px;
+  width: 400px;
+  height: 400px;;
+  border-radius: 98%;
+  -webkit-transform-origin: 80% 10% 0;
+  transform-origin:80% 10% 0;
+}
+.circ__5 {
+  top: 350px;
+  margin-left: 380px;
+  width: 400px;
+  height: 400px;
+  border-radius: 98%;
+  -webkit-transform-origin: 35% 75% 0;
+  transform-origin: 35% 75% 0;
+}
+
+/* Boxes styling */
+.box__container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
+/* Project Cards
+.projects {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+.row1, .row2 {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 0 1rem;
+}
+.cards {
+  flex: 1 auto;
+  border: solid 1px white;
+  margin-right: 20px;
+  height: 350px;
+  display: none;
+  opacity: 0;
+}
+*/
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 767px){
+  .main__nav {
+    flex-direction: column;
+    height: 100%;
+  }
+  .main__head {
+    font-size: 10vw;
+  }
+  .row1, .row2 {
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+  }
+  .cards { margin-bottom: 20px;}
+}

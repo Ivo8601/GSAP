@@ -13,8 +13,7 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- GSAP 3 CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/PixiPlugin.min.js"></script>
+    
     <!-- Font CDN -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300&display=swap" rel="stylesheet">
 
@@ -25,21 +24,31 @@
 <header>
   <nav class="nav">
     <ul class="main__nav">
-      <li class="item projects">Projets</li>
-      <li class="item pause">Pause</li>
-      <li class="item resume">Resume</li>
+      <li class="item stagger__effect">Stagger Effect</li>
+      <li class="item box__effect">Box effect</li>
+      <li class="item render">Rendering</li>
       <!--logo--> <li class="logo">
         <svg class="svg" enable-background="new 0 0 86 86" viewBox="0 0 86 86" xmlns="http://www.w3.org/2000/svg"><g fill="#b51c2a"><path d="m53.3 12.8c0-5.8-4.7-10.5-10.5-10.5s-10.5 4.7-10.5 10.5c0 10.9-8.8 19.8-19.7 19.8h-.1c-5.8-.1-10.5 4.6-10.5 10.4s4.7 10.5 10.5 10.5c10.9 0 19.7 8.8 19.7 19.7 0 5.8 4.7 10.5 10.5 10.5s10.5-4.7 10.5-10.5-4.7-10.5-10.5-10.5c-10.9.1-19.7-8.8-19.7-19.7s8.8-19.8 19.8-19.8c10.9 0 19.8 8.8 19.8 19.8 0 5.8 4.7 10.5 10.4 10.5 5.8 0 10.5-4.7 10.5-10.5s-4.7-10.5-10.5-10.5c-10.9 0-19.7-8.9-19.7-19.7z"/><path d="m73 2.3c-5.8 0-10.5 4.7-10.5 10.5s4.7 10.5 10.5 10.5c5.8 0 10.5-4.7 10.5-10.5s-4.7-10.5-10.5-10.5z"/></g></svg>
       </li>
-      <li class="item restart">Restart</li>
-      <li class="item revert">Revert</li>
-      <li class="item stop">Stop</li>
+      <li class="item restart">test</li>
+      <li class="item animate">test</li>
+      <li class="item stop">test</li>
     </ul>
   </nav>
   <div class="border"></div>
 </header>
+<div id="fps">
+  --fps
+</div>
+
+<div class="anim_background">
+<div class="space stars1"></div>
+<div class="space stars2"></div>
+<div class="space stars3"></div>
+</div>
 
 <!-- Main heading -->
+<div class="main_container">
 <section class="head">
   <h1 class="main__head">MEET GSAP</h1>
   <h3 class="sub__head">Powerful JavaScript Animation</h3>
@@ -56,26 +65,35 @@
 
 <!-- Projects -->
 
+<!--
 <section class="projects">
   <div class="row1">
-      <div class="cards"></div>
-      <div class="cards"></div>
+      <div class="cards card1"></div>
+      <div class="cards card2"></div>
   </div>
   <div class="row2">
-      <div class="cards"></div>
-      <div class="cards"></div>
+      <div class="cards card3"></div>
+      <div class="cards card4"></div>
   </div>
 </section>
+-->
 
 
 
 
+<section class="stagger__container">
+<div class="stag_btn_contain">
 
+  
+  <div class="stag_btn_contain">
+    <button class="stag__btn center__btn">Start</button>
+    </div>
 
+</div>
 
-
-
-
+  <ul class="stagger__inner"> <li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li><li class="stagger"></li></ul>
+  <!-- stagger buttons -->
+</section>
 
 <!-- Boxes -->
 <section class="box__container">
@@ -85,10 +103,17 @@
   <canvas class="canvas box4"  data-interval="6"></canvas>
   <canvas class="canvas box5"  data-interval="5"></canvas>
   <canvas class="canvas box6"  data-interval="3"></canvas>
+  <canvas class="canvas box6"  data-interval="13"></canvas>
+  <canvas class="canvas box6"  data-interval="33"></canvas>
+  <canvas class="canvas box1"  data-interval="10"></canvas>
+  <canvas class="canvas box2"  data-interval="12"></canvas>
+  <canvas class="canvas box3"  data-interval="25"></canvas>
+  <canvas class="canvas box4"  data-interval="6"></canvas>
+
 </section>
+</div>
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
 <script src="main2.js"></script>
 
 </body>
